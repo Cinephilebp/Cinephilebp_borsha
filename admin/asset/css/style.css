@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*--- google font poppinse ----*/
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----- index page -------*/
+.index_bg
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1562329265-95a6d7a83440?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.navigation-buttons
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0 20px;
+}
+.logo
+{
+    color: yellow !important;
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.nav-item
+{
+    margin: 0 10px;
+    display: inline-block;
+}
+.nav-link 
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: yellow !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.nav-link:hover 
+{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.login_btn
+{
+    background-color: transparent;
+    color: yellow !important;
+    border: 1px solid yellow;
+    font-weight: 600;
+}
+.login_btn:hover 
+{
+    border: 1px solid transparent;
+    color: yellow !important;
+}
+
+.custom_bar span
+{
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    margin: 5px 0;
+}
+
+.welcome_note
+{
+    padding-top: 120px;
+}
+
+.welcome_note_in
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.welcome_note_in h1 
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.user_list
+{
+    padding-top: 60px;
+}
+.user_list_in > h1 
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: yellow;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+
+footer {
+    text-align: left;
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    color: yellow;
+    background-color: transparent;
+}
+footer p 
+{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media(max-width : 991px)
+{
+    .navigation-buttons
+    {
+        padding: 0 0px;
+    }
+    .navbar-nav
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: right;
+    }
+    .nav-link {
+        color: white !important;
+        background-color: transparent;
+        padding: 10px 20px !important;
+    }
+    .nav-link:hover 
+    {
+        background-color: transparent;
+        color: yellow !important;
+    }
+    .login_btn
+    {
+        width: fit-content;
+        display: block;
+        float: right;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px; 
+    }
+}
+
+@media(min-width : 992px) and (max-width : 1150px)
+{
+    .logo {
+        font-size: 24px !important;
+    }
+    .navigation-buttons
+    {
+        padding: 0 0px;
+    }
+    .nav-link {
+        font-size: 13px;
+        padding: 10px 10px !important;
+    }
+}
+/*----- /index page -------*/
+
+
+/*----- login page -------*/
+.login_bg{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://i.ibb.co/vZHgGDT/denise-jans-Lq6rcif-Gj-OU-unsplash.jpg');
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    padding: 40px 20px;
+    max-width: 400px;
+    width: 96%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login-container .form-group {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    color: yellow;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.login-container input[type="text"], .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.login-container button[type="submit"] {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-container button[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+/*----- /login page -------*/
+
+/*----- top rated movies page -------*/
+.add_form
+{
+    padding: 0 10px;
+    margin-bottom: 40px;
+}
+.add_form .row 
+{
+    align-items: end;
+}
+.add_form_inp
+{
+    margin: 5px 0;
+}
+.add_form_inp label
+{
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.add_form_inp input,.add_form_inp textarea
+{
+    width: 100%;
+    height: 45px;
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+.add_form_inp button
+{
+    width: 100%;
+    height: 45px;
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    background-color: yellow;
+}
+.review_height
+{
+    max-height: 100px;
+    overflow: scroll;
+}
+.review_height::-webkit-scrollbar
+{
+    display: none;
+}
+/*----- /top rated movies page -------*/
+
+
+
+/*------ profile page -------*/
+.profile_container_item
+{
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+
+.profile_container_item h3 
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.profile_container_inp
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profile_container_inp label
+{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.profile_container_inp input,.profile_container_inp button
+{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    box-shadow: none;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
+.profile_container_inp button
+{
+    background-color: yellow;
+}
+/*------ /profile page -------*/
+
+
+/*----- error & Success msg -------*/
+.success_msg
+{
+    color: green;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.error_msg
+{
+    color: red;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+/*----- /error & Success msg -------*/
+
+
